@@ -2,6 +2,16 @@ $tab-w: 1200px;
 $mob-w: 920px;
 $small-w: 500px;
 
+$font-big-h: 56px;
+$font-medium-h: 48px;
+$font-small-h:36px;
+$font-smallest-h:28px;
+
+$font-big-p: 20px;
+$font-medium-p: 18px;
+$font-small-p: 16px;
+$font-smallest-p: 14px;
+
 @mixin border {
   $red: random(256)-1;
   $green: random(256)-1;

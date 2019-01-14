@@ -1,36 +1,28 @@
 /* Fonts */
 
-@import url('https://fonts.googleapis.com/css?family=Cabin+Condensed:400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700');
 
 
-@mixin f-r {
-  font-family: 'Cabin Condensed', sans-serif;
+@mixin f-light {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+}
+
+@mixin f-regular {
+  font-family: 'Rubik', sans-serif;
   font-weight: 400;
 }
 
-@mixin f-m {
-  font-family: 'Cabin Condensed', sans-serif;
+@mixin f-medium {
+  font-family: 'Rubik', sans-serif;
   font-weight: 500;
 }
 
-@mixin f-sb {
-  font-family: 'Cabin Condensed', sans-serif;
-  font-weight: 600;
-}
-
-@mixin f-b {
-  font-family: 'Cabin Condensed', sans-serif;
+@mixin f-bold {
+  font-family: 'Rubik', sans-serif;
   font-weight: 700;
 }
-$font-big-h: 56px;
-$font-medium-h: 48px;
-$font-small-h:36px;
-$font-smallest-h:28px;
 
-$font-big-p: 20px;
-$font-medium-p: 18px;
-$font-small-p: 16px;
-$font-smallest-p: 14px;
 
 
 /* /Fonts */
@@ -44,7 +36,7 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
-  @include f-r;
+  @include f-regular;
   font-size: 25px;
   color: #232323;
 }
@@ -55,7 +47,7 @@ a {
 
 *, *::before, *::after {
   box-sizing: border-box;
-  direction: ltr;
+  direction: rtl;
 }
 
 p {
