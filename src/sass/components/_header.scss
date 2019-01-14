@@ -1,7 +1,7 @@
 /* ---------------------- header ---------------------- */
 header {
   @include f-bold;
-  color:#fff;
+  color:black;
   height: 74px;
   position: fixed;
   width: 100%;
@@ -9,7 +9,7 @@ header {
   background: #fff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  background:lightgrey;
+
   .section-inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -39,7 +39,7 @@ header {
         top: 70%;
         font-size: 15px;
         right: 30%;
-        color: white;}
+        color: black;}
     }
   }
   .desktop{
@@ -93,7 +93,7 @@ header {
           -webkit-transition: 0.5s;
           transition: 0.5s;
           text-transform: uppercase;
-          color:#fff;
+          color:black;
         }
 
         &.current_page_item, &:hover {

@@ -4,6 +4,12 @@
 	<title>Nimrod</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script language="JavaScript" type="text/javascript" src="plugins/jquery-3.2.0.min.js"></script>
+
+	<link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.css">
+	<script src="plugins/owl-carousel/owl.carousel.js"></script>
+	<link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.css">
+	<script src="plugins/fancybox/jquery.fancybox.js"></script>
+	<script src="plugins/scrollreveal/scrollreveal.js"></script>
 </head>
 <body>
 <header id="header">
@@ -71,13 +77,45 @@
 
 	</div>
 </header>
+<section class="slider-top">
+   <!-- <div class="decor decor-right">
+        <img src="images/index/pipe.png" alt="">
+    </div>-->
+    <div class="slider">
+        <div class="item">
+            <img src="images/slider-img-1.png" alt="">
+        </div>
+        <div class="item">
+            <img src="images/slider-img-1.png" alt="">
+        </div>
+    </div>
+
+    <div class="section-inner">
+        <div class="container">
+            <p class="title">MICRO LASER <br><span>TECHNOLOGY PRODUCTION</span></p>
+            <p class="text">Manufacturing and Prototyping Medical Products and Devices</p>
+            <a href="#" class="button">LEARN MORE</a>
+        </div>
+    </div>
+    </div>
+</section>
 
 
 
 
 <script>
 $(document).ready(function ($) {
-	console.log("Ready!");
+	$('.slider-top .slider').addClass("owl-carousel");
+	$('.slider-top .slider').addClass("owl-theme");
+	$('.slider-top .slider').owlCarousel({
+		items : 1,
+		loop:true,
+		margin:0,
+		nav:false,
+		dots: false,
+		autoplay: true,
+		autoplayHoverPause: false,
+	});
 });
 
 </script>
