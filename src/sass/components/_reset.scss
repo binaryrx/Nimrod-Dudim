@@ -1,0 +1,102 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Cabin+Condensed:400,500,600,700');
+
+
+@mixin f-r {
+  font-family: 'Cabin Condensed', sans-serif;
+  font-weight: 400;
+}
+
+@mixin f-m {
+  font-family: 'Cabin Condensed', sans-serif;
+  font-weight: 500;
+}
+
+@mixin f-sb {
+  font-family: 'Cabin Condensed', sans-serif;
+  font-weight: 600;
+}
+
+@mixin f-b {
+  font-family: 'Cabin Condensed', sans-serif;
+  font-weight: 700;
+}
+$font-big-h: 56px;
+$font-medium-h: 48px;
+$font-small-h:36px;
+$font-smallest-h:28px;
+
+$font-big-p: 20px;
+$font-medium-p: 18px;
+$font-small-p: 16px;
+$font-smallest-p: 14px;
+
+
+/* /Fonts */
+
+
+/* Global */
+html {
+  margin: 0 !important;
+}
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  @include f-r;
+  font-size: 25px;
+  color: #232323;
+}
+
+a {
+  text-decoration: none;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  direction: ltr;
+}
+
+p {
+  margin: 0;
+}
+ul {
+  -webkit-padding-start: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+section {
+  width: 100%;
+  max-width: 1920px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.section-inner {
+  max-width: 1250px;
+  padding: 0 10px;
+  width: 100%;
+}
+a{
+  color:#333333
+}
+a:visited{
+  color:#333333;
+}
+
+.sticky{
+  box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.25);
+}
+.mobile{
+  display: none;
+}
+@media screen and(max-width:1000px){
+  .mobile{
+    display:block;
+  }
+  .desktop{
+    display: none;
+  }
+}
