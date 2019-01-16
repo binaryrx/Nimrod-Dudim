@@ -1,3 +1,4 @@
+//variables
 $tab-w: 1200px;
 $mob-w: 920px;
 $small-w: 500px;
@@ -11,6 +12,32 @@ $font-big-p: 20px;
 $font-medium-p: 18px;
 $font-small-p: 16px;
 $font-smallest-p: 14px;
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700');
+
+
+@mixin f-light {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+}
+
+@mixin f-regular {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+@mixin f-medium {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+}
+
+@mixin f-bold {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+}
+/* /Fonts */
+
 
 @mixin border {
   $red: random(256)-1;

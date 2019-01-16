@@ -1,16 +1,15 @@
 /* ---------------------- header ---------------------- */
 header {
   @include f-bold;
-  color:black;
   height: 74px;
   position: fixed;
   width: 100%;
   z-index: 99;
-  background: #fff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  background-color:rgba(0,0,0,0.15);
 
-  .section-inner {
+  .section-top {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -63,15 +62,23 @@ header {
       left: 100%;
       width: 15vw;
       top: 25%;
+      color: #fff;
       span.tel{
         @include f-regular;
 
       }
     }
     .search-box{
+      position: relative;
       float:left;
-      img{
+      img.redBox{
         vertical-align:middle;
+      }
+      img.searchTool{
+        position:absolute;
+        top:0;
+        left:0;
+        transform: translate(100%,100%);
       }
     }
   }
@@ -83,22 +90,25 @@ header {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      height:74px;
       li {
-        margin: 0 1.3vw;
+        padding: 0 1.3vw;
 
         a {
-          @include f-bold;
+          @include f-medium;
           font-size: 22px;
           color: #393939;
           -webkit-transition: 0.5s;
           transition: 0.5s;
           text-transform: uppercase;
-          color:black;
+          color:#fff;
+          top: 25%;
+          position: relative;
         }
 
         &.current_page_item, &:hover {
           a {
-            color: #4a9ff0;
+            //color: #;
           }
         }
         .dropdown-menu{
@@ -109,6 +119,10 @@ header {
           }
         }
       };
+      li.current_page_item{
+        background-color:rgba(0,0,0,0.15);
+      }
+
       li.subed-menu{
         &:hover{
           ul{
@@ -250,7 +264,6 @@ header {
       &#menu-item-1462 {
         a {
           padding-right: 35px;
-          //font-size: 15px;
           background-image: url("../images/icons/en.png");
           background-repeat: no-repeat;
           background-position: right center;
@@ -322,7 +335,7 @@ header {
    font-size:20px;
     .cont-logo{
       img{
-        width:200px;
+        //width:200px;
       }
     }
     .mobile{

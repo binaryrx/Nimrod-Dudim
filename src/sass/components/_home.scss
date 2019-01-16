@@ -1,0 +1,83 @@
+//Header -- has it's own scss file(_header.scss)
+
+/*  Top Slider Section -start*/
+div.section-inner{
+    width:1366px;
+  margin:0 auto;
+  div.slider-txt{
+    position:absolute;
+    top:32%;
+    z-index:10;
+    p.title{
+      font-size:110px;
+      color:#fff;
+      @include f-light;
+    span{
+      color:#293a4e;
+      @include f-bold;
+    }
+    }
+    p.text{
+      font-size:45px;
+      color:#fff;
+      @include f-light;
+      margin-bottom: 12%;
+    }
+    a.button{
+      width: 178px;
+      height: 52px;
+      padding: 12px 30px;
+      font-size: 18px;
+    }
+    a.button-right{
+      background-color: #293a4e;
+      color:#fff;
+      margin-left:7.5%;
+    }
+    a.button-left{
+      border: 2px solid black;
+      color: #293a4e;
+      @include f-medium;
+      background-color: rgba(0,0,0,0);
+    }
+  }
+  .experience-img{
+    position: absolute;
+    top: 60%;
+    z-index: 10;
+    left: 4.4%;
+
+  }
+}
+  /*  Top Slider Section - Media query's -start*/
+
+  /*  Top Slider Section - Media query's -end*/
+
+/*  Top Slider Section -end*/
+
+
+/*  Service Section - start*/
+section.services{
+  margin:0 auto;
+  .service-container{
+  display: flex;
+  flex-flow:row wrap;
+  justify-content: center;
+  width:100%;
+  //padding:2% 2%;
+  div.service{
+    max-width: 100%;
+    height: auto;
+    width:620px;
+    height:300px;
+    position:relative;
+    display: inline-block;
+
+    span.title{
+      font-size:30px;
+    }
+    a{}
+  }
+}
+}
+/*  Service Section - end*/
