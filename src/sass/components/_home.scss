@@ -6,7 +6,7 @@ div.section-inner{
   margin:0 auto;
   div.slider-txt{
     position:absolute;
-    top:32%;
+    margin-top:-26%;
     z-index:10;
     p.title{
       font-size:110px;
@@ -60,10 +60,12 @@ div.section-inner{
 section.services{
   margin:0 auto;
   .service-container{
-  display: flex;
-  flex-flow:row wrap;
-  justify-content: center;
-  width:100%;
+    display: flex;
+    flex-flow:row wrap;
+    width:100%;
+    justify-content: flex-start;
+    align-content: center;
+
   //padding:2% 2%;
   div.service{
     max-width: 100%;
