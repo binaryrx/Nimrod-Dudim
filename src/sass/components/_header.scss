@@ -60,9 +60,10 @@ header {
     span.header-left-txt{
       position: absolute;
       left: 100%;
-      width: 15vw;
+      width: 300px;
       top: 25%;
       color: #fff;
+      margin-left:20px;
       span.tel{
         @include f-regular;
 
@@ -90,9 +91,9 @@ header {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      height:74px;
+      height:80px;
       li {
-        padding: 0 1.3vw;
+        padding: 40px 1.3vw 0;
 
         a {
           @include f-medium;
@@ -102,7 +103,7 @@ header {
           transition: 0.5s;
           text-transform: uppercase;
           color:#fff;
-          top: 25%;
+          top: -17px;
           position: relative;
         }
 
@@ -170,13 +171,13 @@ header {
   height: 40px;
   position: relative;
   top: 3px;
-  background: #006cb7;
+  //background: #006cb7;
   z-index: 103;
   cursor: pointer;
   display: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  @media only screen and (max-width : 1000px) {
+  @media only screen and (max-width : 1200px) {
     display: inline-block;
   }
   div {
@@ -192,7 +193,7 @@ header {
   }
 
   .inner {
-    position: relative;
+    //position: relative;
     left: 5px;
     top: 5px;
   }
@@ -233,9 +234,9 @@ header {
 .mobile-menu-cont {
   direction: rtl;
   padding: 10px 20px;
-  background: #006cb7;
+  background: #177CBE;
   position: absolute;
-  top: 50px;
+  top: 73px;
   height: 900px;
   z-index: 101;
   left: 0;
@@ -326,9 +327,9 @@ header {
 
 /* --------------------- /header Media Queries ---------------------- */
 @media screen and (max-width: 1850px) {
-.drop{
-  display:block;
-}
+//.drop{
+//  display:block;
+//}
 }
 @media screen and (max-width: 1200px) {
   header{
@@ -350,9 +351,18 @@ header {
         display:none;
       }
     }
+    .cont-menu{
+        margin-right: 250px;
+        margin-top: 10px;
+    }
   }
 
 
+}
+@media screen and(max-width: 650px){
+  .drop{
+    display:block;
+  }
 }
 
 /* --------------------- /header ---------------------- */
