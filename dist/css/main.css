@@ -1,0 +1,1203 @@
+/*!
+ * project-name v0.0.1
+ * A description for your project.
+ * (c) 2019 YOUR NAME
+ * MIT License
+ * http://link-to-your-git-repo.com
+ */
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,700");
+/* /Fonts */
+/* Global */
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,700");
+/* line 5, src/sass/components/_reset.scss */
+html {
+  margin: 0 !important;
+}
+
+/* line 8, src/sass/components/_reset.scss */
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  color: #232323;
+}
+
+/* line 17, src/sass/components/_reset.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 20, src/sass/components/_reset.scss */
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* line 26, src/sass/components/_reset.scss */
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  direction: rtl;
+}
+
+/* line 31, src/sass/components/_reset.scss */
+p {
+  margin: 0;
+}
+
+/* line 34, src/sass/components/_reset.scss */
+ul {
+  -webkit-padding-start: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 40, src/sass/components/_reset.scss */
+section {
+  width: 100%;
+  max-width: 1920px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* line 47, src/sass/components/_reset.scss */
+.section-inner {
+  max-width: 1250px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+/* line 52, src/sass/components/_reset.scss */
+a {
+  color: #333333;
+}
+
+/* line 55, src/sass/components/_reset.scss */
+a:visited {
+  color: #333333;
+}
+
+/* line 59, src/sass/components/_reset.scss */
+.sticky {
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.25);
+          box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.25);
+}
+
+/* line 62, src/sass/components/_reset.scss */
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  /* line 66, src/sass/components/_reset.scss */
+  .mobile {
+    display: block;
+  }
+  /* line 69, src/sass/components/_reset.scss */
+  .desktop {
+    display: none;
+  }
+}
+
+/* line 1, src/sass/components/_general.scss */
+.potato {
+  color: tomato;
+}
+
+/* line 4, src/sass/components/_general.scss */
+.alert {
+  visibility: hidden;
+}
+
+/* ---------------------- header ---------------------- */
+/* line 2, src/sass/components/_header.scss */
+header {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  height: 74px;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* line 12, src/sass/components/_header.scss */
+header .section-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* line 25, src/sass/components/_header.scss */
+header .section-top a.cont-logo {
+  position: absolute;
+}
+
+/* line 27, src/sass/components/_header.scss */
+header .section-top a.cont-logo img.logo-email {
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+/* line 31, src/sass/components/_header.scss */
+header .section-top a.cont-logo img.logo-nimrod {
+  margin-bottom: 15px;
+}
+
+/* line 34, src/sass/components/_header.scss */
+header .section-top a.cont-logo span.logo-txt-up {
+  display: inline;
+}
+
+/* line 35, src/sass/components/_header.scss */
+header .section-top a.cont-logo span.logo-txt-down {
+  display: inline;
+  position: absolute;
+  top: 66%;
+  font-size: 15px;
+  right: 30%;
+  color: black;
+}
+
+/* line 44, src/sass/components/_header.scss */
+header .desktop {
+  display: block;
+}
+
+/* line 47, src/sass/components/_header.scss */
+header .mobile {
+  display: none;
+}
+
+/* line 51, src/sass/components/_header.scss */
+header .cont-logo {
+  margin-right: 20px;
+}
+
+/* line 54, src/sass/components/_header.scss */
+header .cont-menu {
+  margin: 0 auto;
+}
+
+/* line 57, src/sass/components/_header.scss */
+header .left-header {
+  position: absolute;
+  left: 0;
+}
+
+/* line 60, src/sass/components/_header.scss */
+header .left-header span.header-left-txt {
+  position: absolute;
+  left: 100%;
+  width: 300px;
+  top: 25%;
+  color: #fff;
+  margin-left: 20px;
+}
+
+/* line 67, src/sass/components/_header.scss */
+header .left-header span.header-left-txt span.tel {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+/* line 72, src/sass/components/_header.scss */
+header .left-header .search-box {
+  position: relative;
+  float: left;
+}
+
+/* line 75, src/sass/components/_header.scss */
+header .left-header .search-box img.redBox {
+  vertical-align: middle;
+}
+
+/* line 78, src/sass/components/_header.scss */
+header .left-header .search-box img.searchTool {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(100%, 100%);
+          transform: translate(100%, 100%);
+}
+
+/* line 86, src/sass/components/_header.scss */
+header .main-menu {
+  display: inline-block;
+  vertical-align: super;
+}
+
+/* line 90, src/sass/components/_header.scss */
+header .main-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+}
+
+/* line 95, src/sass/components/_header.scss */
+header .main-menu ul li {
+  padding: 40px 1.3vw 0;
+}
+
+/* line 98, src/sass/components/_header.scss */
+header .main-menu ul li a {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  color: #393939;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-transform: uppercase;
+  color: #fff;
+  top: -17px;
+  position: relative;
+}
+
+/* line 115, src/sass/components/_header.scss */
+header .main-menu ul li .dropdown-menu {
+  background: #fafafa;
+  display: none;
+}
+
+/* line 118, src/sass/components/_header.scss */
+header .main-menu ul li .dropdown-menu:hover {
+  display: block;
+}
+
+/* line 123, src/sass/components/_header.scss */
+header .main-menu ul li.current_page_item {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* line 129, src/sass/components/_header.scss */
+header .main-menu ul li.subed-menu:hover ul {
+  display: block;
+  position: absolute;
+}
+
+/* line 137, src/sass/components/_header.scss */
+header .icons {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+/* line 142, src/sass/components/_header.scss */
+header .icons .icon {
+  width: 40px;
+  height: 40px;
+  background: #005db7;
+  border-radius: 100%;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+/* line 151, src/sass/components/_header.scss */
+header .icons .icon:hover {
+  background: #4A9FF0;
+}
+
+/* line 154, src/sass/components/_header.scss */
+header .icons .icon .inner {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* --------------- Toggle button ---------------- */
+/* line 169, src/sass/components/_header.scss */
+.toggle-button {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 3px;
+  z-index: 103;
+  cursor: pointer;
+  display: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 1200px) {
+  /* line 169, src/sass/components/_header.scss */
+  .toggle-button {
+    display: inline-block;
+  }
+}
+
+/* line 183, src/sass/components/_header.scss */
+.toggle-button div {
+  width: 22px;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 2px;
+  -webkit-transition: top 0.5s, opacity 0.5s, width 0.5s, -webkit-transform 1s;
+  transition: top 0.5s, opacity 0.5s, width 0.5s, -webkit-transform 1s;
+  transition: top 0.5s, transform 1s, opacity 0.5s, width 0.5s;
+  transition: top 0.5s, transform 1s, opacity 0.5s, width 0.5s, -webkit-transform 1s;
+}
+
+/* line 195, src/sass/components/_header.scss */
+.toggle-button .inner {
+  left: 5px;
+  top: 5px;
+}
+
+/* line 201, src/sass/components/_header.scss */
+.toggle-button div:nth-child(1) {
+  top: 5px;
+  left: 4px;
+}
+
+/* line 205, src/sass/components/_header.scss */
+.toggle-button div:nth-child(2) {
+  top: 13px;
+  left: 4px;
+}
+
+/* line 209, src/sass/components/_header.scss */
+.toggle-button div:nth-child(3) {
+  top: 21px;
+  left: 4px;
+}
+
+/* line 215, src/sass/components/_header.scss */
+.toggle-button.open div:nth-child(1) {
+  top: 13px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 220, src/sass/components/_header.scss */
+.toggle-button.open div:nth-child(2) {
+  opacity: 0;
+  width: 1px;
+}
+
+/* line 224, src/sass/components/_header.scss */
+.toggle-button.open div:nth-child(3) {
+  top: 13px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* --------------- /Toggle button ---------------- */
+/* --------------- Mobile menu ---------------- */
+/* line 234, src/sass/components/_header.scss */
+.mobile-menu-cont {
+  direction: rtl;
+  padding: 10px 20px;
+  background: #177CBE;
+  position: absolute;
+  top: 73px;
+  height: 900px;
+  z-index: 101;
+  left: 0;
+  right: 0;
+  display: none;
+}
+
+/* line 247, src/sass/components/_header.scss */
+.mobile-menu-cont .mobile-menu > li {
+  position: relative;
+  text-align: left;
+  padding: 10px 0;
+  border-bottom: 2px solid rgba(24, 24, 24, 0.25);
+}
+
+/* line 252, src/sass/components/_header.scss */
+.mobile-menu-cont .mobile-menu > li a {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  padding: 3px 10px;
+  color: #fff;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+/* line 261, src/sass/components/_header.scss */
+.mobile-menu-cont .mobile-menu > li a:hover {
+  color: #1c1c1c;
+}
+
+/* line 266, src/sass/components/_header.scss */
+.mobile-menu-cont .mobile-menu > li#menu-item-1462 a {
+  padding-right: 35px;
+  background-image: url("../images/icons/en.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+/* line 273, src/sass/components/_header.scss */
+.mobile-menu-cont .mobile-menu > li.current_page_item, .mobile-menu-cont .mobile-menu > li.current-menu-item > a {
+  color: #0ca0c9;
+}
+
+/* line 278, src/sass/components/_header.scss */
+.mobile-menu-cont .mobile-menu > li .sub-menu {
+  padding-top: 10px;
+}
+
+/* line 282, src/sass/components/_header.scss */
+.mobile-menu-cont .mobile-menu > li .sub-menu li {
+  margin-top: 5px;
+}
+
+/* line 284, src/sass/components/_header.scss */
+.mobile-menu-cont .mobile-menu > li .sub-menu li a {
+  padding-right: 10px;
+  font-size: 18px;
+}
+
+/* line 292, src/sass/components/_header.scss */
+.mobile-menu-cont .mobile-menu li.current-menu-item > a, .mobile-menu-cont .mobile-menu li.current_page_item > a {
+  color: #0ca0c9;
+}
+
+/* line 296, src/sass/components/_header.scss */
+.mobile-menu-cont .mobile-menu .open-arrow {
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 14px;
+  margin-right: 25px;
+  position: absolute;
+  top: 8px;
+  left: 10px;
+}
+
+/* line 307, src/sass/components/_header.scss */
+.mobile-menu-cont .mobile-menu .open-arrow span {
+  position: relative;
+  top: 2px;
+}
+
+/* line 313, src/sass/components/_header.scss */
+.mobile-menu-cont .mobile-menu .rotate {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  color: #cf0006;
+}
+
+/* line 323, src/sass/components/_header.scss */
+.drop {
+  display: none;
+}
+
+/* --------------- /Mobile menu ---------------- */
+/* --------------------- /header Media Queries ---------------------- */
+@media screen and (max-width: 1200px) {
+  /* line 335, src/sass/components/_header.scss */
+  header {
+    font-size: 20px;
+  }
+  /* line 342, src/sass/components/_header.scss */
+  header .mobile {
+    display: block;
+  }
+  /* line 345, src/sass/components/_header.scss */
+  header .desktop {
+    display: none;
+  }
+  /* line 350, src/sass/components/_header.scss */
+  header .icons .icon {
+    display: none;
+  }
+  /* line 354, src/sass/components/_header.scss */
+  header .cont-menu {
+    margin-right: 250px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  /* line 363, src/sass/components/_header.scss */
+  .drop {
+    display: block;
+  }
+}
+
+/* --------------------- /header ---------------------- */
+/* Fonts */
+/* /Fonts */
+/*  Top Slider Section -start*/
+/* line 5, src/sass/components/_home.scss */
+div.section-inner {
+  width: 100%;
+  min-width: 1600px;
+  margin: 0 auto;
+}
+
+/* line 9, src/sass/components/_home.scss */
+div.section-inner div.slider-txt {
+  position: absolute;
+  margin-top: -32%;
+  z-index: 10;
+}
+
+/* line 13, src/sass/components/_home.scss */
+div.section-inner div.slider-txt p.title {
+  font-size: 110px;
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+}
+
+/* line 17, src/sass/components/_home.scss */
+div.section-inner div.slider-txt p.title span {
+  color: #293a4e;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+}
+
+/* line 22, src/sass/components/_home.scss */
+div.section-inner div.slider-txt p.text {
+  font-size: 45px;
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  margin-bottom: 12%;
+}
+
+/* line 28, src/sass/components/_home.scss */
+div.section-inner div.slider-txt a.button {
+  width: 178px;
+  height: 52px;
+  padding: 12px 30px;
+  font-size: 18px;
+}
+
+/* line 34, src/sass/components/_home.scss */
+div.section-inner div.slider-txt a.button-right {
+  background-color: #293a4e;
+  color: #fff;
+  margin-left: 7.5%;
+}
+
+/* line 39, src/sass/components/_home.scss */
+div.section-inner div.slider-txt a.button-left {
+  border: 2px solid black;
+  color: #293a4e;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* line 46, src/sass/components/_home.scss */
+div.section-inner .experience-img {
+  position: absolute;
+  top: 60%;
+  z-index: 10;
+  left: 4.4%;
+}
+
+/*  Top Slider Section - Media query's -start*/
+/*  Top Slider Section - Media query's -end*/
+/*  Top Slider Section -end*/
+/*  Service Section - start*/
+/* line 62, src/sass/components/_home.scss */
+section.services {
+  margin: 0 auto;
+}
+
+/* line 64, src/sass/components/_home.scss */
+section.services .service-container {
+  text-align: right;
+  padding: 30px 45px;
+}
+
+/* line 68, src/sass/components/_home.scss */
+section.services .service-container .row {
+  background: white;
+}
+
+/* line 70, src/sass/components/_home.scss */
+section.services .service-container .row div.service {
+  max-width: 100%;
+  position: relative;
+  display: inline-block;
+  height: 300px;
+  text-align: center;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+}
+
+/* line 77, src/sass/components/_home.scss */
+section.services .service-container .row div.service div.txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/* line 82, src/sass/components/_home.scss */
+section.services .service-container .row div.service div.txt span.title {
+  font-size: 36px;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+}
+
+/* line 88, src/sass/components/_home.scss */
+section.services .service-container .row div.service div.txt a {
+  display: block;
+  color: #bed7ea;
+  font-size: 18px;
+}
+
+/* line 93, src/sass/components/_home.scss */
+section.services .service-container .row div.service div.txt a:hover {
+  text-decoration: none;
+}
+
+/*  Service Section - end*/
+/*  Info Section -START*/
+/* line 105, src/sass/components/_home.scss */
+section.info {
+  background: url("../images/background-info-section.png");
+  background-size: cover;
+}
+
+/* line 109, src/sass/components/_home.scss */
+section.info .container-fluid {
+  background: #ffffff;
+  text-align: right;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  width: 75%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: visible;
+}
+
+/* line 119, src/sass/components/_home.scss */
+section.info .container-fluid .right {
+  width: 20%;
+  position: relative;
+  margin-right: 20px;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+/* line 126, src/sass/components/_home.scss */
+section.info .container-fluid .right img {
+  float: right;
+  display: inline-block;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 50%;
+}
+
+/* line 134, src/sass/components/_home.scss */
+section.info .container-fluid .left {
+  width: 75%;
+  padding-left: 40px;
+  padding-top: 60px;
+  margin-bottom: 60px;
+  margin-left: 15px;
+}
+
+/* line 141, src/sass/components/_home.scss */
+section.info .container-fluid .left h2 {
+  display: block;
+  font-size: 36px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+/* line 145, src/sass/components/_home.scss */
+section.info .container-fluid .left h2 span {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+}
+
+/* line 149, src/sass/components/_home.scss */
+section.info .container-fluid .left p {
+  font-size: 18px;
+  display: inline;
+}
+
+/* line 152, src/sass/components/_home.scss */
+section.info .container-fluid .left p span.bold {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+/* line 157, src/sass/components/_home.scss */
+section.info .container-fluid .left p span.smaller {
+  line-height: 22px;
+  display: inline-block;
+}
+
+/* line 168, src/sass/components/_home.scss */
+section.info .container-fluid .left div.props {
+  text-align: center;
+  display: inline;
+}
+
+/* line 171, src/sass/components/_home.scss */
+section.info .container-fluid .left div.props span {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* line 175, src/sass/components/_home.scss */
+section.info .container-fluid .left div.props span::before {
+  content: url("../images/small-red-v.png");
+  margin-left: 5px;
+  vertical-align: sub;
+}
+
+/* line 183, src/sass/components/_home.scss */
+section.info .container-fluid .continue-reading {
+  background: #293a4e;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  padding: 15px 30px;
+  position: absolute;
+  bottom: -22.5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  cursor: pointer;
+}
+
+/*  Info Section -END*/
+/* Department Section -START*/
+/* line 203, src/sass/components/_home.scss */
+section.departments {
+  background: #ffffff;
+  margin-bottom: 100px;
+}
+
+/* line 206, src/sass/components/_home.scss */
+section.departments .container-fluid {
+  width: 75%;
+  text-align: right;
+}
+
+/* line 209, src/sass/components/_home.scss */
+section.departments .container-fluid div.txt {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* line 212, src/sass/components/_home.scss */
+section.departments .container-fluid div.txt h2 {
+  font-size: 36px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+/* line 216, src/sass/components/_home.scss */
+section.departments .container-fluid div.txt h2 span {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+}
+
+/* line 220, src/sass/components/_home.scss */
+section.departments .container-fluid div.txt p {
+  font-size: 18px;
+}
+
+/* line 227, src/sass/components/_home.scss */
+section.departments .container-fluid div.row .department div.content {
+  background: #bed7ea;
+  margin-bottom: 100px;
+  padding: 40px 20px;
+}
+
+/* line 232, src/sass/components/_home.scss */
+section.departments .container-fluid div.row .department h4 {
+  font-size: 22px;
+}
+
+/* line 235, src/sass/components/_home.scss */
+section.departments .container-fluid div.row .department p {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+/* line 239, src/sass/components/_home.scss */
+section.departments .container-fluid div.row .department div.img-cont {
+  background-image: url("../images/department-circle.png");
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -50px;
+  left: 50px;
+  background-repeat: no-repeat;
+  -webkit-transition: 0.25s ease-in;
+  transition: 0.25s ease-in;
+}
+
+/* line 248, src/sass/components/_home.scss */
+section.departments .container-fluid div.row .department div.img-cont img {
+  position: absolute;
+  top: 47%;
+  left: 47%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/* line 255, src/sass/components/_home.scss */
+section.departments .container-fluid div.row .department div.img-cont:hover {
+  background-image: url("../images/department-circle-hover.png");
+  border-radius: 100px;
+}
+
+/* Department Section -END*/
+/* News Section -START*/
+/* line 268, src/sass/components/_home.scss */
+section.news {
+  background: url("../images/background-info-section.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 272, src/sass/components/_home.scss */
+section.news .container-fluid {
+  width: 75%;
+  text-align: right;
+  margin-bottom: 150px;
+}
+
+/* line 276, src/sass/components/_home.scss */
+section.news .container-fluid .txt {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* line 279, src/sass/components/_home.scss */
+section.news .container-fluid .txt h2 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+}
+
+/* line 282, src/sass/components/_home.scss */
+section.news .container-fluid .txt h2 span {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+}
+
+/* line 287, src/sass/components/_home.scss */
+section.news .container-fluid .txt p {
+  font-size: 18px;
+}
+
+/* line 295, src/sass/components/_home.scss */
+section.news .container-fluid .updates .row .update .content {
+  background: #ffffff;
+  padding: 30px 20px;
+  margin-bottom: 100px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+/* line 301, src/sass/components/_home.scss */
+section.news .container-fluid .updates .row .update .content h4 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+/* line 305, src/sass/components/_home.scss */
+section.news .container-fluid .updates .row .update .content p {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/* line 310, src/sass/components/_home.scss */
+section.news .container-fluid .updates .row .update .content a div.button {
+  background-image: url("../images/blue-box-news.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+  position: absolute;
+  bottom: -12%;
+  left: 8%;
+  width: 50px;
+}
+
+/* line 321, src/sass/components/_home.scss */
+section.news .container-fluid .updates .row .update .content a div.button:hover {
+  background-image: url("../images/red-box-news.png");
+  height: 60px;
+  width: 60px;
+}
+
+/* line 331, src/sass/components/_home.scss */
+section.news .container-fluid .more-updates {
+  text-align: center;
+}
+
+/* line 333, src/sass/components/_home.scss */
+section.news .container-fluid .more-updates button {
+  border: none;
+  outline: none;
+  color: white;
+  background: #293a4e;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+
+/* News Section -END*/
+/* Footer -Start*/
+/* line 347, src/sass/components/_home.scss */
+footer {
+  position: relative;
+  text-align: center;
+  background: #293a4e;
+}
+
+/* line 351, src/sass/components/_home.scss */
+footer .container-fluid {
+  position: relative;
+}
+
+/* line 353, src/sass/components/_home.scss */
+footer .container-fluid .form {
+  position: absolute;
+  background: white;
+  width: 75%;
+  top: -95px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 99999;
+}
+
+/* line 362, src/sass/components/_home.scss */
+footer .container-fluid .form .form-box h2#form-title {
+  margin-top: 40px;
+  font-size: 36px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+/* line 366, src/sass/components/_home.scss */
+footer .container-fluid .form .form-box h2#form-title span {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+}
+
+/* line 370, src/sass/components/_home.scss */
+footer .container-fluid .form .form-box p.form-p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+/* line 377, src/sass/components/_home.scss */
+footer .container-fluid .form .form-box div.wpcf7 form span {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+/* line 380, src/sass/components/_home.scss */
+footer .container-fluid .form .form-box div.wpcf7 form span input {
+  font-size: 18px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 25%;
+  outline: none;
+}
+
+/* line 389, src/sass/components/_home.scss */
+footer .container-fluid .form .form-box div.wpcf7 form span input:focus {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  border-bottom: 3px solid black;
+}
+
+/* line 394, src/sass/components/_home.scss */
+footer .container-fluid .form .form-box div.wpcf7 form input#send_btn {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border: none;
+  outline: none;
+  padding: 5px 35px;
+  color: white;
+  background: url("../images/form-submit.png") no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+/* line 413, src/sass/components/_home.scss */
+footer .container-fluid .cats {
+  padding-top: 300px;
+  padding-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  font-size: 18px;
+  text-align: right;
+  width: 75%;
+  -webkit-transform: translateX(-17%);
+          transform: translateX(-17%);
+}
+
+/* line 428, src/sass/components/_home.scss */
+footer .container-fluid .cats .sitemap a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+/* line 438, src/sass/components/_home.scss */
+footer .container-fluid .cats .catalog a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+/* line 449, src/sass/components/_home.scss */
+footer .container-fluid .cats .contact-us div span {
+  display: inline-block;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+}
+
+/* line 454, src/sass/components/_home.scss */
+footer .container-fluid .cats .contact-us div p {
+  display: inline-block;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+/* line 465, src/sass/components/_home.scss */
+footer .container-fluid .cats .working-hours div span {
+  display: inline-block;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+}
+
+/* line 469, src/sass/components/_home.scss */
+footer .container-fluid .cats .working-hours div p {
+  display: inline-block;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+/* line 477, src/sass/components/_home.scss */
+footer .foot {
+  height: 75px;
+}
+
+/* line 479, src/sass/components/_home.scss */
+footer .foot .container-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid #525f6f;
+}
+
+/* line 483, src/sass/components/_home.scss */
+footer .foot .container-fluid .logo {
+  position: absolute;
+  text-align: right;
+  top: 50%;
+  -webkit-transform: translateY(15%);
+          transform: translateY(15%);
+  text-align: right;
+}
+
+/* line 488, src/sass/components/_home.scss */
+footer .foot .container-fluid .logo img.footer-email-logo {
+  margin-left: 5px;
+  position: relative;
+  top: 7px;
+}
+
+/* line 500, src/sass/components/_home.scss */
+footer .foot .container-fluid .logo span {
+  position: absolute;
+  font-size: 15px;
+  right: 57px;
+  color: white;
+  top: 35px;
+}
+
+/* line 508, src/sass/components/_home.scss */
+footer .foot .container-fluid .credit {
+  position: absolute;
+  -webkit-transform: translateY(80%);
+          transform: translateY(80%);
+  left: 0;
+  right: 0;
+  color: white;
+  font-size: 18px;
+}
+
+/* line 516, src/sass/components/_home.scss */
+footer .foot .container-fluid .credit-extra {
+  position: absolute;
+  left: 0;
+  color: white;
+  font-size: 18px;
+  -webkit-transform: translateY(80%);
+          transform: translateY(80%);
+}
+
+/* Footer -END*/
