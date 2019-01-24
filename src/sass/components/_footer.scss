@@ -1,0 +1,182 @@
+/* Footer -Start*/
+footer{
+  position: relative;
+  text-align:center;
+  background: #293a4e;
+  .container-fluid{
+    position: relative;
+    .form{
+      position: absolute;
+      background: white;
+      width:75%;
+      top: -95px;
+      left:50%;
+      transform:translateX(-50%);
+      z-index: 99999;
+      .form-box{
+        h2#form-title{
+          margin-top:40px;
+          font-size:36px;
+          @include f-regular;
+          span{
+            @include f-bold;
+          }
+        }
+        p.form-p{
+          font-size:18px;
+          margin-bottom: 40px;
+          @include f-regular;
+        }
+        div.wpcf7{
+          form{
+            span{
+              margin-left: 25px;
+              margin-right: 25px;
+              input{
+                font-size:18px;
+                @include f-regular;
+                border:none;
+                border-bottom:1px solid black;
+                width: 25%;
+                //transition: 1s ease-in;
+                outline: none;
+              }
+              input:focus{
+                @include f-medium;
+                border-bottom:3px solid black;
+              }
+            }
+            input#send_btn{
+              position: absolute;
+              bottom: -20px;
+              left: 50%;
+              transform: translateX(-50%);
+              border: none;
+              outline: none;
+              padding: 5px 35px;
+              color: white;
+              background:url("../images/form-submit.png") no-repeat;
+              background-size:cover;
+              cursor:pointer;
+
+            }
+          }
+        }
+
+      }
+    }
+    .cats{
+      padding-top: 300px;
+      padding-bottom: 100px;
+      display: flex;
+      justify-content: space-between;
+      color:white;
+      font-size: 18px;
+      text-align: right;
+
+      width:75%;
+      transform: translateX(-17%);
+      .sitemap{
+        h4{
+
+        }
+        a{
+          display: block;
+          color:white;
+          text-decoration: none;
+        }
+      }
+      .catalog{
+        h4{
+
+        }
+        a{
+          display: block;
+          color:white;
+          text-decoration: none;
+        }
+      }
+      .contact-us{
+        h4{
+
+        }
+        div{
+          span{
+            display: inline-block;
+            @include f-bold;
+
+          }
+          p{
+            display: inline-block;
+            @include f-regular;
+          }
+        }
+      }
+      .working-hours{
+        h4{
+
+        }
+        div{
+          span{
+            display: inline-block;
+            @include f-bold;
+          }
+          p{
+            display: inline-block;
+            @include f-regular;
+          }
+        }
+      }
+    }
+  }
+  .foot{
+    height:75px;
+    .container-fluid{
+      display: flex;
+      justify-content: space-between;
+      border-top:1px solid #525f6f;
+      .logo{
+        position: absolute;
+        text-align: right;
+        top: 50%;
+        transform: translateY(15%);
+        img.footer-email-logo{
+          margin-left: 5px;
+          position: relative;
+          top: 7px;
+        }
+        text-align: right;
+        img.footer-nimrod-logo{
+          //position: absolute;
+          //top: 15%;
+          //right: 75px;
+          //transform: translateY(50%);
+        }
+        span{
+          position: absolute;
+          font-size: 15px;
+          right: 57px;
+          color: white;
+          top: 35px;
+        }
+      }
+      .credit{
+        position: absolute;
+        transform: translateY(80%);
+        left:0;
+        right:0;
+        color:white;
+        font-size:18px;
+      }
+      .credit-extra{
+        position: absolute;
+        left:0;
+        color:white;
+        font-size:18px;
+        transform: translateY(80%);
+      }
+    }
+
+  }
+}
+/* Footer -END*/

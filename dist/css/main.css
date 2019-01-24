@@ -552,6 +552,217 @@ header .icons .icon .inner {
 }
 
 /* --------------------- /header ---------------------- */
+/* Footer -Start*/
+/* line 2, src/sass/components/_footer.scss */
+footer {
+  position: relative;
+  text-align: center;
+  background: #293a4e;
+}
+
+/* line 6, src/sass/components/_footer.scss */
+footer .container-fluid {
+  position: relative;
+}
+
+/* line 8, src/sass/components/_footer.scss */
+footer .container-fluid .form {
+  position: absolute;
+  background: white;
+  width: 75%;
+  top: -95px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 99999;
+}
+
+/* line 17, src/sass/components/_footer.scss */
+footer .container-fluid .form .form-box h2#form-title {
+  margin-top: 40px;
+  font-size: 36px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+/* line 21, src/sass/components/_footer.scss */
+footer .container-fluid .form .form-box h2#form-title span {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+}
+
+/* line 25, src/sass/components/_footer.scss */
+footer .container-fluid .form .form-box p.form-p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+/* line 32, src/sass/components/_footer.scss */
+footer .container-fluid .form .form-box div.wpcf7 form span {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+/* line 35, src/sass/components/_footer.scss */
+footer .container-fluid .form .form-box div.wpcf7 form span input {
+  font-size: 18px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 25%;
+  outline: none;
+}
+
+/* line 44, src/sass/components/_footer.scss */
+footer .container-fluid .form .form-box div.wpcf7 form span input:focus {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  border-bottom: 3px solid black;
+}
+
+/* line 49, src/sass/components/_footer.scss */
+footer .container-fluid .form .form-box div.wpcf7 form input#send_btn {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border: none;
+  outline: none;
+  padding: 5px 35px;
+  color: white;
+  background: url("../images/form-submit.png") no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+/* line 68, src/sass/components/_footer.scss */
+footer .container-fluid .cats {
+  padding-top: 300px;
+  padding-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  font-size: 18px;
+  text-align: right;
+  width: 75%;
+  -webkit-transform: translateX(-17%);
+          transform: translateX(-17%);
+}
+
+/* line 83, src/sass/components/_footer.scss */
+footer .container-fluid .cats .sitemap a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+/* line 93, src/sass/components/_footer.scss */
+footer .container-fluid .cats .catalog a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+/* line 104, src/sass/components/_footer.scss */
+footer .container-fluid .cats .contact-us div span {
+  display: inline-block;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+}
+
+/* line 109, src/sass/components/_footer.scss */
+footer .container-fluid .cats .contact-us div p {
+  display: inline-block;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+/* line 120, src/sass/components/_footer.scss */
+footer .container-fluid .cats .working-hours div span {
+  display: inline-block;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+}
+
+/* line 124, src/sass/components/_footer.scss */
+footer .container-fluid .cats .working-hours div p {
+  display: inline-block;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+/* line 132, src/sass/components/_footer.scss */
+footer .foot {
+  height: 75px;
+}
+
+/* line 134, src/sass/components/_footer.scss */
+footer .foot .container-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid #525f6f;
+}
+
+/* line 138, src/sass/components/_footer.scss */
+footer .foot .container-fluid .logo {
+  position: absolute;
+  text-align: right;
+  top: 50%;
+  -webkit-transform: translateY(15%);
+          transform: translateY(15%);
+  text-align: right;
+}
+
+/* line 143, src/sass/components/_footer.scss */
+footer .foot .container-fluid .logo img.footer-email-logo {
+  margin-left: 5px;
+  position: relative;
+  top: 7px;
+}
+
+/* line 155, src/sass/components/_footer.scss */
+footer .foot .container-fluid .logo span {
+  position: absolute;
+  font-size: 15px;
+  right: 57px;
+  color: white;
+  top: 35px;
+}
+
+/* line 163, src/sass/components/_footer.scss */
+footer .foot .container-fluid .credit {
+  position: absolute;
+  -webkit-transform: translateY(80%);
+          transform: translateY(80%);
+  left: 0;
+  right: 0;
+  color: white;
+  font-size: 18px;
+}
+
+/* line 171, src/sass/components/_footer.scss */
+footer .foot .container-fluid .credit-extra {
+  position: absolute;
+  left: 0;
+  color: white;
+  font-size: 18px;
+  -webkit-transform: translateY(80%);
+          transform: translateY(80%);
+}
+
+/* Footer -END*/
 /* Fonts */
 /* /Fonts */
 /*  Top Slider Section -start*/
@@ -990,214 +1201,3 @@ section.news .container-fluid .more-updates button {
 }
 
 /* News Section -END*/
-/* Footer -Start*/
-/* line 347, src/sass/components/_home.scss */
-footer {
-  position: relative;
-  text-align: center;
-  background: #293a4e;
-}
-
-/* line 351, src/sass/components/_home.scss */
-footer .container-fluid {
-  position: relative;
-}
-
-/* line 353, src/sass/components/_home.scss */
-footer .container-fluid .form {
-  position: absolute;
-  background: white;
-  width: 75%;
-  top: -95px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  z-index: 99999;
-}
-
-/* line 362, src/sass/components/_home.scss */
-footer .container-fluid .form .form-box h2#form-title {
-  margin-top: 40px;
-  font-size: 36px;
-  font-family: 'Rubik', sans-serif;
-  font-weight: 400;
-}
-
-/* line 366, src/sass/components/_home.scss */
-footer .container-fluid .form .form-box h2#form-title span {
-  font-family: 'Rubik', sans-serif;
-  font-weight: 700;
-}
-
-/* line 370, src/sass/components/_home.scss */
-footer .container-fluid .form .form-box p.form-p {
-  font-size: 18px;
-  margin-bottom: 40px;
-  font-family: 'Rubik', sans-serif;
-  font-weight: 400;
-}
-
-/* line 377, src/sass/components/_home.scss */
-footer .container-fluid .form .form-box div.wpcf7 form span {
-  margin-left: 25px;
-  margin-right: 25px;
-}
-
-/* line 380, src/sass/components/_home.scss */
-footer .container-fluid .form .form-box div.wpcf7 form span input {
-  font-size: 18px;
-  font-family: 'Rubik', sans-serif;
-  font-weight: 400;
-  border: none;
-  border-bottom: 1px solid black;
-  width: 25%;
-  outline: none;
-}
-
-/* line 389, src/sass/components/_home.scss */
-footer .container-fluid .form .form-box div.wpcf7 form span input:focus {
-  font-family: 'Rubik', sans-serif;
-  font-weight: 500;
-  border-bottom: 3px solid black;
-}
-
-/* line 394, src/sass/components/_home.scss */
-footer .container-fluid .form .form-box div.wpcf7 form input#send_btn {
-  position: absolute;
-  bottom: -20px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  border: none;
-  outline: none;
-  padding: 5px 35px;
-  color: white;
-  background: url("../images/form-submit.png") no-repeat;
-  background-size: cover;
-  cursor: pointer;
-}
-
-/* line 413, src/sass/components/_home.scss */
-footer .container-fluid .cats {
-  padding-top: 300px;
-  padding-bottom: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  color: white;
-  font-size: 18px;
-  text-align: right;
-  width: 75%;
-  -webkit-transform: translateX(-17%);
-          transform: translateX(-17%);
-}
-
-/* line 428, src/sass/components/_home.scss */
-footer .container-fluid .cats .sitemap a {
-  display: block;
-  color: white;
-  text-decoration: none;
-}
-
-/* line 438, src/sass/components/_home.scss */
-footer .container-fluid .cats .catalog a {
-  display: block;
-  color: white;
-  text-decoration: none;
-}
-
-/* line 449, src/sass/components/_home.scss */
-footer .container-fluid .cats .contact-us div span {
-  display: inline-block;
-  font-family: 'Rubik', sans-serif;
-  font-weight: 700;
-}
-
-/* line 454, src/sass/components/_home.scss */
-footer .container-fluid .cats .contact-us div p {
-  display: inline-block;
-  font-family: 'Rubik', sans-serif;
-  font-weight: 400;
-}
-
-/* line 465, src/sass/components/_home.scss */
-footer .container-fluid .cats .working-hours div span {
-  display: inline-block;
-  font-family: 'Rubik', sans-serif;
-  font-weight: 700;
-}
-
-/* line 469, src/sass/components/_home.scss */
-footer .container-fluid .cats .working-hours div p {
-  display: inline-block;
-  font-family: 'Rubik', sans-serif;
-  font-weight: 400;
-}
-
-/* line 477, src/sass/components/_home.scss */
-footer .foot {
-  height: 75px;
-}
-
-/* line 479, src/sass/components/_home.scss */
-footer .foot .container-fluid {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  border-top: 1px solid #525f6f;
-}
-
-/* line 483, src/sass/components/_home.scss */
-footer .foot .container-fluid .logo {
-  position: absolute;
-  text-align: right;
-  top: 50%;
-  -webkit-transform: translateY(15%);
-          transform: translateY(15%);
-  text-align: right;
-}
-
-/* line 488, src/sass/components/_home.scss */
-footer .foot .container-fluid .logo img.footer-email-logo {
-  margin-left: 5px;
-  position: relative;
-  top: 7px;
-}
-
-/* line 500, src/sass/components/_home.scss */
-footer .foot .container-fluid .logo span {
-  position: absolute;
-  font-size: 15px;
-  right: 57px;
-  color: white;
-  top: 35px;
-}
-
-/* line 508, src/sass/components/_home.scss */
-footer .foot .container-fluid .credit {
-  position: absolute;
-  -webkit-transform: translateY(80%);
-          transform: translateY(80%);
-  left: 0;
-  right: 0;
-  color: white;
-  font-size: 18px;
-}
-
-/* line 516, src/sass/components/_home.scss */
-footer .foot .container-fluid .credit-extra {
-  position: absolute;
-  left: 0;
-  color: white;
-  font-size: 18px;
-  -webkit-transform: translateY(80%);
-          transform: translateY(80%);
-}
-
-/* Footer -END*/
