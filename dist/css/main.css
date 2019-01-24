@@ -1173,7 +1173,7 @@ section.news .container-fluid .updates .row .update .content a div.button {
   -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
   position: absolute;
-  bottom: -12%;
+  bottom: -25px;
   left: 8%;
   width: 50px;
 }
@@ -1183,14 +1183,15 @@ section.news .container-fluid .updates .row .update .content a div.button:hover 
   background-image: url("../images/red-box-news.png");
   height: 60px;
   width: 60px;
+  bottom: -30px;
 }
 
-/* line 331, src/sass/components/_home.scss */
+/* line 332, src/sass/components/_home.scss */
 section.news .container-fluid .more-updates {
   text-align: center;
 }
 
-/* line 333, src/sass/components/_home.scss */
+/* line 334, src/sass/components/_home.scss */
 section.news .container-fluid .more-updates button {
   border: none;
   outline: none;
