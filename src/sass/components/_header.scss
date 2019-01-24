@@ -360,8 +360,16 @@ header {
 
 }
 @media screen and(max-width: 650px){
+  header .left-header span.header-left-txt {
+    top:8%;
+  }
   .drop{
     display:block;
+  }
+}@media screen and(max-width: 550px){
+  header .left-header span.header-left-txt {
+    top:15%;
+    font-size:16px;
   }
 }
 

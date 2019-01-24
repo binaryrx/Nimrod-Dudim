@@ -546,8 +546,20 @@ header .icons .icon .inner {
 
 @media screen and (max-width: 650px) {
   /* line 363, src/sass/components/_header.scss */
+  header .left-header span.header-left-txt {
+    top: 8%;
+  }
+  /* line 366, src/sass/components/_header.scss */
   .drop {
     display: block;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  /* line 370, src/sass/components/_header.scss */
+  header .left-header span.header-left-txt {
+    top: 15%;
+    font-size: 16px;
   }
 }
 
@@ -836,27 +848,25 @@ div.section-inner .experience-img {
   left: 4.4%;
 }
 
-/*  Top Slider Section - Media query's -start*/
-/*  Top Slider Section - Media query's -end*/
 /*  Top Slider Section -end*/
 /*  Service Section - start*/
-/* line 62, src/sass/components/_home.scss */
+/* line 59, src/sass/components/_home.scss */
 section.services {
   margin: 0 auto;
 }
 
-/* line 64, src/sass/components/_home.scss */
+/* line 61, src/sass/components/_home.scss */
 section.services .service-container {
   text-align: right;
   padding: 30px 45px;
 }
 
-/* line 68, src/sass/components/_home.scss */
+/* line 65, src/sass/components/_home.scss */
 section.services .service-container .row {
   background: white;
 }
 
-/* line 70, src/sass/components/_home.scss */
+/* line 67, src/sass/components/_home.scss */
 section.services .service-container .row div.service {
   max-width: 100%;
   position: relative;
@@ -867,7 +877,7 @@ section.services .service-container .row div.service {
   transition: 0.5s ease-in;
 }
 
-/* line 77, src/sass/components/_home.scss */
+/* line 74, src/sass/components/_home.scss */
 section.services .service-container .row div.service div.txt {
   position: absolute;
   top: 50%;
@@ -876,7 +886,7 @@ section.services .service-container .row div.service div.txt {
           transform: translate(-50%, -50%);
 }
 
-/* line 82, src/sass/components/_home.scss */
+/* line 79, src/sass/components/_home.scss */
 section.services .service-container .row div.service div.txt span.title {
   font-size: 36px;
   color: white;
@@ -884,27 +894,27 @@ section.services .service-container .row div.service div.txt span.title {
   font-weight: 700;
 }
 
-/* line 88, src/sass/components/_home.scss */
+/* line 85, src/sass/components/_home.scss */
 section.services .service-container .row div.service div.txt a {
   display: block;
   color: #bed7ea;
   font-size: 18px;
 }
 
-/* line 93, src/sass/components/_home.scss */
+/* line 90, src/sass/components/_home.scss */
 section.services .service-container .row div.service div.txt a:hover {
   text-decoration: none;
 }
 
 /*  Service Section - end*/
 /*  Info Section -START*/
-/* line 105, src/sass/components/_home.scss */
+/* line 102, src/sass/components/_home.scss */
 section.info {
   background: url("../images/background-info-section.png");
   background-size: cover;
 }
 
-/* line 109, src/sass/components/_home.scss */
+/* line 106, src/sass/components/_home.scss */
 section.info .container-fluid {
   background: #ffffff;
   text-align: right;
@@ -918,7 +928,7 @@ section.info .container-fluid {
   overflow: visible;
 }
 
-/* line 119, src/sass/components/_home.scss */
+/* line 116, src/sass/components/_home.scss */
 section.info .container-fluid .right {
   width: 20%;
   position: relative;
@@ -927,7 +937,7 @@ section.info .container-fluid .right {
   margin-left: 20px;
 }
 
-/* line 126, src/sass/components/_home.scss */
+/* line 123, src/sass/components/_home.scss */
 section.info .container-fluid .right img {
   float: right;
   display: inline-block;
@@ -937,7 +947,7 @@ section.info .container-fluid .right img {
   top: 50%;
 }
 
-/* line 134, src/sass/components/_home.scss */
+/* line 131, src/sass/components/_home.scss */
 section.info .container-fluid .left {
   width: 75%;
   padding-left: 40px;
@@ -946,7 +956,7 @@ section.info .container-fluid .left {
   margin-left: 15px;
 }
 
-/* line 141, src/sass/components/_home.scss */
+/* line 138, src/sass/components/_home.scss */
 section.info .container-fluid .left h2 {
   display: block;
   font-size: 36px;
@@ -954,19 +964,19 @@ section.info .container-fluid .left h2 {
   font-weight: 400;
 }
 
-/* line 145, src/sass/components/_home.scss */
+/* line 142, src/sass/components/_home.scss */
 section.info .container-fluid .left h2 span {
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
 }
 
-/* line 149, src/sass/components/_home.scss */
+/* line 146, src/sass/components/_home.scss */
 section.info .container-fluid .left p {
   font-size: 18px;
   display: inline;
 }
 
-/* line 152, src/sass/components/_home.scss */
+/* line 149, src/sass/components/_home.scss */
 section.info .container-fluid .left p span.bold {
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
@@ -974,32 +984,32 @@ section.info .container-fluid .left p span.bold {
   margin-bottom: 25px;
 }
 
-/* line 157, src/sass/components/_home.scss */
+/* line 154, src/sass/components/_home.scss */
 section.info .container-fluid .left p span.smaller {
   line-height: 22px;
   display: inline-block;
 }
 
-/* line 168, src/sass/components/_home.scss */
+/* line 165, src/sass/components/_home.scss */
 section.info .container-fluid .left div.props {
   text-align: center;
   display: inline;
 }
 
-/* line 171, src/sass/components/_home.scss */
+/* line 168, src/sass/components/_home.scss */
 section.info .container-fluid .left div.props span {
   margin-left: 10px;
   margin-right: 10px;
 }
 
-/* line 175, src/sass/components/_home.scss */
+/* line 172, src/sass/components/_home.scss */
 section.info .container-fluid .left div.props span::before {
   content: url("../images/small-red-v.png");
   margin-left: 5px;
   vertical-align: sub;
 }
 
-/* line 183, src/sass/components/_home.scss */
+/* line 180, src/sass/components/_home.scss */
 section.info .container-fluid .continue-reading {
   background: #293a4e;
   color: white;
@@ -1019,61 +1029,61 @@ section.info .container-fluid .continue-reading {
 
 /*  Info Section -END*/
 /* Department Section -START*/
-/* line 203, src/sass/components/_home.scss */
+/* line 200, src/sass/components/_home.scss */
 section.departments {
   background: #ffffff;
   margin-bottom: 100px;
 }
 
-/* line 206, src/sass/components/_home.scss */
+/* line 203, src/sass/components/_home.scss */
 section.departments .container-fluid {
   width: 75%;
   text-align: right;
 }
 
-/* line 209, src/sass/components/_home.scss */
+/* line 206, src/sass/components/_home.scss */
 section.departments .container-fluid div.txt {
   margin-top: 100px;
   margin-bottom: 100px;
 }
 
-/* line 212, src/sass/components/_home.scss */
+/* line 209, src/sass/components/_home.scss */
 section.departments .container-fluid div.txt h2 {
   font-size: 36px;
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
 }
 
-/* line 216, src/sass/components/_home.scss */
+/* line 213, src/sass/components/_home.scss */
 section.departments .container-fluid div.txt h2 span {
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
 }
 
-/* line 220, src/sass/components/_home.scss */
+/* line 217, src/sass/components/_home.scss */
 section.departments .container-fluid div.txt p {
   font-size: 18px;
 }
 
-/* line 227, src/sass/components/_home.scss */
+/* line 224, src/sass/components/_home.scss */
 section.departments .container-fluid div.row .department div.content {
   background: #bed7ea;
   margin-bottom: 100px;
   padding: 40px 20px;
 }
 
-/* line 232, src/sass/components/_home.scss */
+/* line 229, src/sass/components/_home.scss */
 section.departments .container-fluid div.row .department h4 {
   font-size: 22px;
 }
 
-/* line 235, src/sass/components/_home.scss */
+/* line 232, src/sass/components/_home.scss */
 section.departments .container-fluid div.row .department p {
   font-size: 18px;
   line-height: 1.2;
 }
 
-/* line 239, src/sass/components/_home.scss */
+/* line 236, src/sass/components/_home.scss */
 section.departments .container-fluid div.row .department div.img-cont {
   background-image: url("../images/department-circle.png");
   width: 100px;
@@ -1086,7 +1096,7 @@ section.departments .container-fluid div.row .department div.img-cont {
   transition: 0.25s ease-in;
 }
 
-/* line 248, src/sass/components/_home.scss */
+/* line 245, src/sass/components/_home.scss */
 section.departments .container-fluid div.row .department div.img-cont img {
   position: absolute;
   top: 47%;
@@ -1095,7 +1105,7 @@ section.departments .container-fluid div.row .department div.img-cont img {
           transform: translate(-50%, -50%);
 }
 
-/* line 255, src/sass/components/_home.scss */
+/* line 252, src/sass/components/_home.scss */
 section.departments .container-fluid div.row .department div.img-cont:hover {
   background-image: url("../images/department-circle-hover.png");
   border-radius: 100px;
@@ -1103,45 +1113,45 @@ section.departments .container-fluid div.row .department div.img-cont:hover {
 
 /* Department Section -END*/
 /* News Section -START*/
-/* line 268, src/sass/components/_home.scss */
+/* line 265, src/sass/components/_home.scss */
 section.news {
   background: url("../images/background-info-section.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-/* line 272, src/sass/components/_home.scss */
+/* line 269, src/sass/components/_home.scss */
 section.news .container-fluid {
   width: 75%;
   text-align: right;
   margin-bottom: 150px;
 }
 
-/* line 276, src/sass/components/_home.scss */
+/* line 273, src/sass/components/_home.scss */
 section.news .container-fluid .txt {
   margin-top: 100px;
   margin-bottom: 100px;
 }
 
-/* line 279, src/sass/components/_home.scss */
+/* line 276, src/sass/components/_home.scss */
 section.news .container-fluid .txt h2 {
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
   font-size: 36px;
 }
 
-/* line 282, src/sass/components/_home.scss */
+/* line 279, src/sass/components/_home.scss */
 section.news .container-fluid .txt h2 span {
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
 }
 
-/* line 287, src/sass/components/_home.scss */
+/* line 284, src/sass/components/_home.scss */
 section.news .container-fluid .txt p {
   font-size: 18px;
 }
 
-/* line 295, src/sass/components/_home.scss */
+/* line 292, src/sass/components/_home.scss */
 section.news .container-fluid .updates .row .update .content {
   background: #ffffff;
   padding: 30px 20px;
@@ -1150,21 +1160,21 @@ section.news .container-fluid .updates .row .update .content {
   position: relative;
 }
 
-/* line 301, src/sass/components/_home.scss */
+/* line 298, src/sass/components/_home.scss */
 section.news .container-fluid .updates .row .update .content h4 {
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
   font-size: 24px;
 }
 
-/* line 305, src/sass/components/_home.scss */
+/* line 302, src/sass/components/_home.scss */
 section.news .container-fluid .updates .row .update .content p {
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
   font-size: 18px;
 }
 
-/* line 310, src/sass/components/_home.scss */
+/* line 307, src/sass/components/_home.scss */
 section.news .container-fluid .updates .row .update .content a div.button {
   background-image: url("../images/blue-box-news.png");
   background-size: contain;
@@ -1178,7 +1188,7 @@ section.news .container-fluid .updates .row .update .content a div.button {
   width: 50px;
 }
 
-/* line 321, src/sass/components/_home.scss */
+/* line 318, src/sass/components/_home.scss */
 section.news .container-fluid .updates .row .update .content a div.button:hover {
   background-image: url("../images/red-box-news.png");
   height: 60px;
@@ -1186,12 +1196,12 @@ section.news .container-fluid .updates .row .update .content a div.button:hover 
   bottom: -30px;
 }
 
-/* line 332, src/sass/components/_home.scss */
+/* line 329, src/sass/components/_home.scss */
 section.news .container-fluid .more-updates {
   text-align: center;
 }
 
-/* line 334, src/sass/components/_home.scss */
+/* line 331, src/sass/components/_home.scss */
 section.news .container-fluid .more-updates button {
   border: none;
   outline: none;
